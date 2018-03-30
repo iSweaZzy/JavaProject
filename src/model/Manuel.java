@@ -3,7 +3,12 @@ package model;
 // TO DO ...
 public class Manuel extends Livre{
 
-	private int niveau;
+	private int niveau; 
+	
+	public Manuel(String titre, String auteur, int nbPages, int niveau){
+		super(titre, auteur, nbPages);
+		this.niveau = niveau;
+	}
 
 	public int getNiveau() {
 		return niveau;
@@ -12,6 +17,10 @@ public class Manuel extends Livre{
 	public void setNiveau(int niveau) {
 		this.niveau = niveau;
 	}
-
+	
+	
+	public String ToString() {
+		return "Matricule : "+this.getNumEnreg()+", Titre : "+this.getTitre()+" de "+this.auteur+", Nb de Pages du livre:"+this.nbPages;
+	}
 
 }

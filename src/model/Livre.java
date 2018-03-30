@@ -6,6 +6,17 @@ public class Livre extends Document{
 	private String auteur;
 	private int nbPages;
 
+
+	public Livre() {
+		this("unknown", "unknown", 0);
+	}
+	
+	public Livre(String titre, String auteur, int nbPages) {
+		super(titre);
+		this.auteur = auteur;
+		this.nbPages = nbPages;
+	}
+	
 	public String getAuteur() {
 		return auteur;
 	}
@@ -23,6 +34,6 @@ public class Livre extends Document{
 	}
 
 	public String ToString() {
-		return "Matricule : "+this.numEnreg+", Titre : "+this.titre+" de "+this.auteur+", Nb de Pages du livre:"+this.nbPages;
+		return "Matricule : "+this.getNumEnreg()+", Titre : "+this.getTitre()+" de "+this.auteur+", Nb de Pages du livre:"+this.nbPages;
 	}
 }

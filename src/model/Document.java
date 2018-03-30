@@ -7,8 +7,8 @@ public abstract class Document implements Comparable<Object>, Serializable{
 	private String titre;
 	private static int count = 0;
 	
-	public Document(String LeTitre) {
-		titre = LeTitre;
+	public Document(String Titre) {
+		this.titre = titre;
 		setNumEnreg(++count); 		
 	}
 

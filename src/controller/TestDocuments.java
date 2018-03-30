@@ -7,15 +7,20 @@ import model.Manuel;
 import model.Revue;
 import model.Roman;
 
+import java.util.Collection;
+
 public class TestDocuments {
 
 	/**
 	 * Programme de test.
 	 */
 	public static void main(String[] args) {
-
+		
+		System.out.print("Test");
+		Bibliotheque B = new Bibliotheque();
+		
+		B.addDocument(new Livre("L'archipel du Goulag", "Soljenitsyne", 250));
 		Document[] documents = {
-				// new Livre("L'archipel du Goulag", "Soljenitsyne", 250),
 				// new Roman("Rouge Brésil", "Rufin", 120, Roman.GONCOURT),
 				// new Revue("Le point", 03, 2014),
 				// new Roman("Le mendiant", "Wiesel", 150, Roman.MEDICIS),

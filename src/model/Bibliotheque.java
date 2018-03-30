@@ -12,12 +12,14 @@ public class Bibliotheque {
 	 */
 	public Bibliotheque() {
 		// TO DO ... ( "vide" ne veut pas dire null ! )
-		throw new RuntimeException("Bibliotheque() not yet implemented");
+		
+		//throw new RuntimeException("Bibliotheque() not yet implemented");
 	}
 
 	/**
 	 * Renvoie la liste des documents de la bibliotheque.
 	 */
+	
 	public List<Document> getDocuments() {
 		return documents;
 	}
@@ -28,7 +30,7 @@ public class Bibliotheque {
 	 */
 	public Document getDocument(int i) {
 		// TO DO ...
-		throw new RuntimeException("getDocument() not yet implemented");
+		//throw new RuntimeException("getDocument() not yet implemented");
 	}
 
 	/**
