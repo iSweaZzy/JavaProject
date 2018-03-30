@@ -22,4 +22,7 @@ public class Livre extends Document{
 		this.nbPages = nbPages;
 	}
 
+	public String ToString() {
+		return "Matricule : "+this.numEnreg+", Titre : "+this.titre+" de "+this.auteur+", Nb de Pages du livre:"+this.nbPages;
+	}
 }

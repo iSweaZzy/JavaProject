@@ -1,13 +1,19 @@
 package model;
-
+import java.io.Serializable;
 // TO DO ...
-public abstract class Document {
+public abstract class Document implements Comparable<Object>, Serializable{
 
 	private int numEnreg;
 	private String titre;
+	private static int count = 0;
+	
+	public Document(String LeTitre) {
+		titre = LeTitre;
+		setNumEnreg(++count); 		
+	}
 
 	public int getNumEnreg() {
-		return numEnreg;
+		return numEnreg; 
 	}
 
 	public void setNumEnreg(int numEnreg) {
